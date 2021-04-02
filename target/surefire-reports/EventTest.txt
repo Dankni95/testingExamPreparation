@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: EventTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.038 s <<< FAILURE! - in EventTest
+test  Time elapsed: 0.036 s  <<< ERROR!
+java.time.format.DateTimeParseException: Text '22-01-2021' could not be parsed at index 3
+	at EventTest.test(EventTest.java:10)
+

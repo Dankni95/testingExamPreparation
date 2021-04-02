@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class PlannedEvent extends EventNarrator{
@@ -8,8 +9,11 @@ public class PlannedEvent extends EventNarrator{
             System.out.println("-----------------------");
             System.out.println("PLANNED");
             System.out.println("-----------------------");
-            System.out.println(singleEvent.getEventInput());
-            System.out.println(singleEvent.getEventDate());
+            System.out.println(
+                    singleEvent.getEventInput() +" is happening in " +
+                            Date.compareEventDate(LocalDate.now(),singleEvent.eventDate)
+                            + " day(s)!"
+            );
         }
     }
 }
